@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+
+}
+.product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.produc-image{
+    float: left;
+}
+.produc-image img{
+    height: 100px;
+    width: 100px;
+    margin: 15px 0;
+    display: block;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+.produc-image img:hover{
+    opacity: 1;
+}
+.img-conten{
+    float: right;
+}
+.img-conten img{
+    height: 650px;
+    width: 500px;
+    margin: 10px;
+}
+
+

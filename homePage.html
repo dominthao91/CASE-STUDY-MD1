@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="cssHompage.css">
+</head>
+<body>
+<div class="product">
+    <div class="produc-image">
+        <img src="img/Chirashizushi.jpg" onclick="clickMe(this)">
+        <img src="img/Gunkan%20sushi.jpg" onclick="clickMe(this)">
+        <img src="img/Makimono.jpg" onclick="clickMe(this)">
+        <img src="img/Nigiri%20Sushi.jpg" onclick="clickMe(this)">
+        <img src="img/Oshizushi.jpg" onclick="clickMe(this)">
+        <img src="img/Temaki%20sushi.jpg" onclick="clickMe(this)">
+    </div>
+    <div class="img-conten">
+        <img src="img/Chirashizushi.jpg" id="box">
+    </div>
+
+    <script>
+        function clickMe(me){
+            let checker = document.getElementById('box');
+            checker.src = me.src;
+
+        }
+    </script>
+</div>
+<div style="text-align: right" >
+    <h1>Các Món Ăn Đặc Sắc</h1>
+    <img src="img/mon1.jpg" width="300" height="200"><br>
+    <img src="img/mon2.jpg" width="300" height="200"><br>
+    <img src="img/mon3.jpg" width="300" height="200"><br>
+</div>
+
+</body>
+</html>
