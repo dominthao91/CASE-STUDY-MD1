@@ -3,8 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>Người quản lí</title>
+    <style>
+        header{
+            background-image: url('img/andong.gif');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            display: flex;
+            text-align: left;
+            justify-content:right;
+            align-items: center;
+        }
+        }
+    </style>
 </head>
 <body>
-<h1>đây là mục quản lý ds</h1>
+<header>
+    <div>
+        <h2>Add New Menu</h2>
+        <input type="text" id="input">
+        <button onclick="addNew()">Add</button>
+        <p id="check" style="color: red"></p>
+        <h3>Display Menu</h3>
+        <table border="1">
+            <tr bgcolor="aqua">
+                <td>STT</td>
+                <td>List Menu</td>
+                <td colspan="2" style="text-align: center">Action</td>
+            </tr>
+            <tbody id="myBody" style="background-color: mintcream">
+            </tbody>
+        </table>
+    </div>
+    <div>
+
+    </div>
+    <script>
+        let members = ['ChirashiSushi', 'GunkanSushi', 'Makimono', 'NigiriSushi','OshiSushi','TemakiSushi'];
+
+        function listMembers() {
+            let newMember = '';
+            for (let i = 0; i < members.length; i++) {
+                newMember += '<tr>' + '<td>' + i + '</td>' + '<td>' + members[i] + '<td><button style="background-color:chartreuse" onclick="edit(' + i + ')">Edit'
+                    + '<td><button id="aa" onclick="del(' + i + ')" style="background-color: red" >Delete' + '</td>' + '</tr>';
+            }
+            document.getElementById('myBody').innerHTML = newMember;
+        }
+
+        listMembers();
+
+        function addNew() {
+            let add = document.getElementById('input').value;
+            let text;
+            if (add == "") {
+                text = 'The name is required! Please try again!';
+                document.getElementById('check').innerHTML = text;
+            } else {
+                members.push(add);
+                document.getElementById('input').value;
+                document.getElementById('check').innerHTML = '';
+                listMembers();
+            }
+
+            document.getElementById('input').value = '';
+        }
+
+        function del(xoa) {
+            members.splice(xoa, 1);
+            listMembers();
+        }
+
+        function edit(sua) {
+            let newadd = prompt('Hãy nhập tên món ăn mới :', members[sua]);
+            members[sua] = newadd;
+            listMembers();
+        }
+    </script>
+</header>
+<div style="background:cadetblue">
+    <div>
+        <h1>DANH SÁCH KHÁCH ĐẶT CHỖ</h1>
+    </div>
+</div>
 </body>
 </html>

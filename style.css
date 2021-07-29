@@ -147,7 +147,7 @@ header input:checked ~ .menu-item {
     font-size: 25px;
     opacity: 0.5;
     animation: headerAnimation;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
@@ -162,7 +162,8 @@ header input:checked ~ .menu-item {
         opacity: 0.4;
     }
 }
-.hearder-text p{
+
+.hearder-text p {
     position: relative;
     width: 130px;
     animation: aniName 10s infinite;
@@ -170,27 +171,19 @@ header input:checked ~ .menu-item {
     -webkit-animation: aniName 10s infinite;
     -o-animation: aniName 10s infinite;
 }
+
 @keyframes aniName {
-    0% { left: 0px; }
-    50% { left: 80%; color: green; background: #cccccc; }
-    100% { left: 0px; }
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 80%;
+        color: green;
+        background: #cccccc;
+    }
+    100% {
+        left: 0px;
+    }
 }
 
-@-moz-keyframes aniName {
-    0% { left: 0px; }
-    50% { left: 80%; color: green; background: #cccccc; }
-    100% { left: 0px; }
-}
-
-@-webkit-keyframes aniName {
-    0% { left: 0px; }
-    50% { left: 80%; color: green; background: #cccccc; }
-    100% { left: 0px; }
-}
-
-@-o-keyframes aniName {
-    0% { left: 0px; }
-    50% { left: 80%; color: green; background: #cccccc; }
-    100% { left: 0px; }
-}
 

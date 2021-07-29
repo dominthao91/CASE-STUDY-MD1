@@ -5,25 +5,59 @@
     <title>寿司店</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cssOrder.css">
+    <style>
+        #item {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            background-color: #04AA6D;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        ul#menu {
+            display: flex;
+
+        }
+
+        ul#menu li {
+            padding: 0px 20px;
+        }
+    </style>
 
 </head>
 <body>
+<div id="item">
+    <nav>
+        <ul id="menu">
+            <li>TRANG CHỦ</li>
+            <li>THÔNG TIN CỬA HÀNG</li>
+            <li>HÌNH ẢNH</li>
+            <li>MENU</li>
+            <li>LIÊN HỆ</li>
+            <li>QUẢN LÝ CỬA HÀNG</li>
+        </ul>
+    </nav>
+</div>
 <header>
+
     <input type="checkbox">
     <div class="menu-icon">
         <div class="menu-line">
         </div>
     </div>
     <div class="menu-item">
-        <li><a href="homePage.html" >Trang chủ</a></li>
+        <li><a href="index.html">Trang chủ</a></li>
         <li><a href="">Thông tin về cửa hàng</a></li>
-        <li><a href="logi.html">Quản  lý của hàng</a></li>
-        <li><a href="">Hình ảnh</a></li>
+        <li><a href="logi.html">Quản lý của hàng</a></li>
+        <li><a href="img.html">Hình ảnh</a></li>
         <li><a href="">Menu</a></li>
         <li><a href="">Liên hệ</a></li>
     </div>
     <div class="hearder-text">
-        <p>Khách hàng là thượng đế</p>
+        <p>Giảm giá giờ vàng</p>
         <img src="img/loggi.jpg" width="500px" height="100">
         <h1>ẨM thực Nhật Bản</h1>
         <button id="myBtn">Đặt Trước</button>
@@ -32,9 +66,9 @@
 <div id="myModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <form id="form" >
+        <form id="form">
             Họ và tên :<br>
-            <input type="text"  placeholder="nhâp tên bạn" > <br>
+            <input type="text" placeholder="nhâp tên bạn"> <br>
             Email :<br>
             <input type="text" placeholder="nhập email"> <br>
             Số điện thoại: <br>
