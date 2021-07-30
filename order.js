@@ -26,10 +26,12 @@ function order(){
    let phone = document.getElementById("phoneCustomer").value;
    let person = document.getElementById("personCustomer").value;
    let date = document.getElementById("timeCustomer").value;
-   arrrayCustomer.push(new Customer(arrrayCustomer.length,name,email,phone,person,date));
+   let arrayCustomer = [3,name,email,phone,person,date];
    let a = confirm('bạn có chắc muốn đặt trước không');
    if (a == true){
        alert('Bạn đã đặt chỗ thành công');
+
+       localStorage.setItem('arrayCustomer', arrayCustomer);
    }else {
        alert('Cảm ơn bạn đã quan tâm');
    }

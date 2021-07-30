@@ -67,7 +67,7 @@
 <div id="myModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <form action="" id="form">
+        <form id="form">
             Họ và tên :<br>
             <input type="text" name="nameCustomer" id="nameCustomer" placeholder="nhâp tên bạn"> <br>
             Email :<br>
@@ -79,13 +79,12 @@
             Thời gian đến:<br>
             <input name="timeCustomer" type="datetime-local" id="timeCustomer"><br>
             <br>
-            <button type="submit" onclick="order()">Confirm</button>
+            <button type="button" onclick="order()">Confirm</button>
         </form>
     </div>
 </div>
 
 <script src="order.js"></script>
-<script src="customer.js"></script>
 <script src="AddEditDel.js"></script>
 </body>
 

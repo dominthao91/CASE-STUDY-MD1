@@ -53,6 +53,18 @@ class Customer {
     setTime(time){
         this.time = time;
     }
+
 }
 let arrrayCustomer = new Array();
-arrrayCustomer.push(new Customer(1,"Đỗ Anh Thảo","thaodo@gmail.com","0383169245",5,"12/11/2021"));
+let b = new Customer();
+let arrayLocal = JSON.stringify(localStorage.getItem('arrayCustomer'));
+let strings =arrayLocal.split(',')
+
+alert(strings)
+b.setId(strings[0]);
+b.setName(strings[1]);
+b.setEmail(strings[2]);
+b.setNumberPhone(strings[3]);
+b.setNumberPerson(strings[4]);
+b.setTime(strings[5]);
+arrrayCustomer.push(b);
