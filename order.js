@@ -21,9 +21,16 @@ window.onclick = function(event) {
     }
 }
 function order(){
-   let a= confirm('bạn có muốn đặt chỗ trước không');
+   let name = document.getElementById("nameCustomer").value;
+   let email = document.getElementById("emailCustomer").value;
+   let phone = document.getElementById("phoneCustomer").value;
+   let person = document.getElementById("personCustomer").value;
+   let date = document.getElementById("timeCustomer").value;
+   arrrayCustomer.push(new Customer(arrrayCustomer.length,name,email,phone,person,date));
+   let a = confirm('bạn có chắc muốn đặt trước không');
    if (a == true){
-       alert('bạn đã đặt chỗ thành công');
-   }else {}
-   alert('cảm ơn bạn đã quan tâm tới chúng tôi');
+       alert('Bạn đã đặt chỗ thành công');
+   }else {
+       alert('Cảm ơn bạn đã quan tâm');
+   }
 }
